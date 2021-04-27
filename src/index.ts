@@ -1,3 +1,4 @@
+import { StringUtilWsv as StringUtil } from "./whitespacesv/StringUtil";
 import WsvChar from "./whitespacesv/WsvChar";
 import WsvDocument from "./whitespacesv/WsvDocument";
 import WsvDocumentServer from "./whitespacesv/WsvDocumentServer";
@@ -11,5 +12,7 @@ export {
     WsvDocumentServer,
     WsvLine,
     WsvParserCharIterator,
-    WsvParserException
+    WsvParserException,
+
+    StringUtil
 };
