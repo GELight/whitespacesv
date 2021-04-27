@@ -3,13 +3,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.StringUtil = exports.WsvParserException = exports.WsvParserCharIterator = exports.WsvLine = exports.WsvDocumentServer = exports.WsvDocument = exports.WsvChar = void 0;
+exports.StringUtil = exports.WsvParserException = exports.WsvParserCharIterator = exports.WsvLine = exports.WsvDocumentServer = exports.WsvDocumentLineIterator = exports.WsvDocument = exports.WsvChar = void 0;
 const StringUtil_1 = require("./whitespacesv/StringUtil");
 Object.defineProperty(exports, "StringUtil", { enumerable: true, get: function () { return StringUtil_1.StringUtilWsv; } });
 const WsvChar_1 = __importDefault(require("./whitespacesv/WsvChar"));
 exports.WsvChar = WsvChar_1.default;
 const WsvDocument_1 = __importDefault(require("./whitespacesv/WsvDocument"));
 exports.WsvDocument = WsvDocument_1.default;
+const WsvDocumentLineIterator_1 = __importDefault(require("./whitespacesv/WsvDocumentLineIterator"));
+exports.WsvDocumentLineIterator = WsvDocumentLineIterator_1.default;
 const WsvDocumentServer_1 = __importDefault(require("./whitespacesv/WsvDocumentServer"));
 exports.WsvDocumentServer = WsvDocumentServer_1.default;
 const WsvLine_1 = __importDefault(require("./whitespacesv/WsvLine"));
