@@ -21,7 +21,8 @@ class WsvParser {
     }
     static parseDocument(content, document) {
         const iterator = new WsvParserCharIterator_1.default(content);
-        while (true) {
+        const running = true;
+        while (running) {
             const newLine = WsvParser.parseLineWithIterator(iterator);
             document.addWsvLines(newLine);
             if (iterator.isEndOfText()) {

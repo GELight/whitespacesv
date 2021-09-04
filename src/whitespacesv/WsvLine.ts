@@ -40,7 +40,7 @@ export default class WsvLine {
         return this;
     }
 
-    public addValue(value: string) {
+    public addValue(value: string): void {
         if (this.values === null) {
             this.values = [];
         }
@@ -89,7 +89,7 @@ export default class WsvLine {
 
     public toString(): string {
         const sb: StringBuilder = new StringBuilder();
-        const serializedLine = WsvSerializer.serializeLine(sb, this);
+        WsvSerializer.serializeLine(sb, this);
         return sb.toString();
     }
 

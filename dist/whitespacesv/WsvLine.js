@@ -75,7 +75,7 @@ class WsvLine {
     }
     toString() {
         const sb = new StringBuilder_1.default();
-        const serializedLine = WsvSerializer_1.default.serializeLine(sb, this);
+        WsvSerializer_1.default.serializeLine(sb, this);
         return sb.toString();
     }
 }

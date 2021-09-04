@@ -58,8 +58,8 @@ export default class WsvParserCharIterator {
 
     public readCommentText(): string {
         const startIndex: number = this.index;
-
-        while (true) {
+        const running: boolean = true;
+        while (running) {
             if (this.isEndOfText()) {
                 break;
             }
@@ -74,7 +74,8 @@ export default class WsvParserCharIterator {
 
     public readWhitespaceOrNull(): string {
         const startIndex: number = this.index;
-        while (true) {
+        const running: boolean = true;
+        while (running) {
             if (this.isEndOfText()) {
                 break;
             }
@@ -96,8 +97,8 @@ export default class WsvParserCharIterator {
 
     public readString(): string {
         this.sb.clear();
-
-        while (true) {
+        const running: boolean = true;
+        while (running) {
             if (this.isEndOfText()) {
                 throw new WsvParserException(this, "String not closed");
             }
@@ -126,8 +127,8 @@ export default class WsvParserCharIterator {
 
     public readValue(): string {
         const startIndex: number = this.index;
-
-        while (true) {
+        const running: boolean = true;
+        while (running) {
             if (this.isEndOfText()) {
                 break;
             }
