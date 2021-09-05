@@ -1,4 +1,13 @@
-import { StringUtilWsv as StringUtil } from "./whitespacesv/StringUtil";
+import {
+    ReliableTxtDocument, 
+    ReliableTxtDocumentServer, 
+    ReliableTxtEncoding, 
+    ReliableTxtException, 
+    ReliableTxtFile, 
+    StringUtil 
+} from "@gelight/reliabletxt";
+
+import StringUtilWsv from "./whitespacesv/StringUtil";
 import WsvChar from "./whitespacesv/WsvChar";
 import WsvDocument from "./whitespacesv/WsvDocument";
 import WsvDocumentLineIterator from "./whitespacesv/WsvDocumentLineIterator";
@@ -8,6 +17,13 @@ import WsvParserCharIterator from "./whitespacesv/WsvParserCharIterator";
 import WsvParserException from "./whitespacesv/WsvParserException";
 
 export {
+    ReliableTxtDocument,
+    ReliableTxtDocumentServer,
+    ReliableTxtEncoding,
+    ReliableTxtException,
+    ReliableTxtFile,
+    StringUtil,
+    
     WsvChar,
     WsvDocument,
     WsvDocumentLineIterator,
@@ -15,6 +31,5 @@ export {
     WsvLine,
     WsvParserCharIterator,
     WsvParserException,
-
-    StringUtil
+    StringUtilWsv
 };

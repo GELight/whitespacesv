@@ -1,7 +1,7 @@
 import { StringUtil } from "@gelight/reliabletxt";
 import WsvChar from "./WsvChar";
 
-class StringUtilWsv extends StringUtil {
+export default class StringUtilWsv extends StringUtil {
 
     public static isWhitespaceOrEmpty(str: string): boolean {
         const codePoints = StringUtil.stringToCodePoints(str);
@@ -13,8 +13,4 @@ class StringUtilWsv extends StringUtil {
         return true;
     }
 
-}
-
-export {
-    StringUtilWsv
 }
