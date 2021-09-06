@@ -31,7 +31,7 @@
     "release": "./build-release.sh"
   },
   "devDependencies": {
-    "@gelight/reliabletxt": "^0.0.2",
+    "@gelight/reliabletxt": "^0.0.4",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.10",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
