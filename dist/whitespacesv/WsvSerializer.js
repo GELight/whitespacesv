@@ -56,20 +56,20 @@ class WsvSerializer {
             sb.appendString("\"-\"");
         }
         else if (WsvSerializer.containsSpecialChars(str)) {
-            sb.appendCodePoint(reliabletxt_1.StringUtil.hash);
+            sb.appendCodePoint(reliabletxt_1.StringUtil.doubleQuote);
             const codePoints = reliabletxt_1.StringUtil.stringToCodePoints(str);
             for (const c of codePoints) {
                 if (c === reliabletxt_1.StringUtil.lineBreak) {
                     sb.appendString("\"/\"");
                 }
-                else if (c === reliabletxt_1.StringUtil.hash) {
+                else if (c === reliabletxt_1.StringUtil.doubleQuote) {
                     sb.appendString("\"\"");
                 }
                 else {
                     sb.appendCodePoint(c);
                 }
             }
-            sb.appendCodePoint(reliabletxt_1.StringUtil.hash);
+            sb.appendCodePoint(reliabletxt_1.StringUtil.doubleQuote);
         }
         else {
             sb.appendString(str);

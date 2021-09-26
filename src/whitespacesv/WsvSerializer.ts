@@ -56,18 +56,18 @@ export default class WsvSerializer {
         } else if (str === "-") {
             sb.appendString("\"-\"");
         } else if (WsvSerializer.containsSpecialChars(str)) {
-            sb.appendCodePoint(StringUtil.hash);
+            sb.appendCodePoint(StringUtil.doubleQuote);
             const codePoints: number[] = StringUtil.stringToCodePoints(str);
             for (const c of codePoints) {
                 if (c === StringUtil.lineBreak) {
                     sb.appendString("\"/\"");
-                } else if (c === StringUtil.hash) {
+                } else if (c === StringUtil.doubleQuote) {
                     sb.appendString("\"\"");
                 } else {
                     sb.appendCodePoint(c);
                 }
             }
-            sb.appendCodePoint(StringUtil.hash);
+            sb.appendCodePoint(StringUtil.doubleQuote);
         } else {
             sb.appendString(str);
         }
