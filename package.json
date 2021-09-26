@@ -1,7 +1,7 @@
 {
   "name": "@gelight/whitespacesv",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "WhitespaceSV - The Intuitive and Reliable Alternative to CSV",
   "main": "dist/index.js",
   "repository": {
